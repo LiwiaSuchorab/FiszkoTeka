@@ -91,8 +91,8 @@
                             <td class="col-2"> </td>
                             <td class="col-2 d-flex align-items-center justify-content-center flex-wrap">
                                 <sec:authorize access="hasAnyAuthority('ADMIN')">
-                                <a href="/admin/word/remove?toRemoveId=${category.id}" class="btn btn-danger rounded-0 text-light m-1" onclick="return confirm('Czy na pewno chcesz usunąć tą kategorie?');">Usuń</a>
-                                <a href="/admin/word/edit?idToEdit=${category.id}" class="btn btn-warning rounded-0 text-light m-1">Edytuj</a>
+                                <%--<a href="/admin/category/remove?toRemoveId=${category.id}" class="btn btn-danger rounded-0 text-light m-1" onclick="return confirm('Czy na pewno chcesz usunąć tą kategorie?');">Usuń</a>--%>
+                                <a href="/admin/category/edit?idToEdit=${category.id}" class="btn btn-warning rounded-0 text-light m-1">Edytuj</a>
                                 </sec:authorize>
                                 <a href="/user/word/category?idCategory=${category.id}" class="btn btn-info rounded-0 text-light m-1">Szczegóły</a>
                             </td>
